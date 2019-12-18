@@ -34,7 +34,7 @@ const EditListingDescriptionPanel = props => {
       values={{
         listingTitle: (
           <ListingLink listing={listing}>
-            <FormattedMessage id="EditListingDescriptionPanel.listingTitle" />
+            {listing.attributes.title}
           </ListingLink>
         ),
       }}
@@ -48,14 +48,14 @@ const EditListingDescriptionPanel = props => {
       <h1 className={css.title}>{panelTitle}</h1>
       <EditListingDescriptionForm
         className={css.form}
-        initialValues={{ title, description, certificate: publicData.certificate }}
+        initialValues={{ title, description, category: publicData.category }}
         saveActionMsg={submitButtonText}
         onSubmit={values => {
-          const { title, description, certificate } = values;
+          const { title, description, category } = values;
           const updateValues = {
             title: title.trim(),
             description,
-            publicData: { certificate },
+            publicData: { category },
           };
 
           onSubmit(updateValues);
@@ -64,7 +64,7 @@ const EditListingDescriptionPanel = props => {
         updated={panelUpdated}
         updateInProgress={updateInProgress}
         fetchErrors={errors}
-        certificate={config.custom.certificate}
+        categories={config.custom.categories}
       />
     </div>
   );

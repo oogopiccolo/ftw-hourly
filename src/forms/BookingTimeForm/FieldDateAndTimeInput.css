@@ -142,13 +142,6 @@ Remember to do required code changes also in FieldDateAndTimeInput.js!
   }
 }
 
-.startDate {
-  width: 100%;
-}
-.endDateHidden {
-  display: none;
-}
-
 .lineBetween,
 .lineBetweenDisabled {
   margin-top: 36px;
