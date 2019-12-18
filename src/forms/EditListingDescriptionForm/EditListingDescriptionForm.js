@@ -9,6 +9,7 @@ import { maxLength, required, composeValidators } from '../../util/validators';
 import { Form, Button, FieldTextInput } from '../../components';
 
 import css from './EditListingDescriptionForm.css';
+import CustomCategorySelectFieldMaybe from './CustomCategorySelectFieldMaybe';
 
 const TITLE_MAX_LENGTH = 60;
 
@@ -17,6 +18,7 @@ const EditListingDescriptionFormComponent = props => (
     {...props}
     render={fieldRenderProps => {
       const {
+        categories,
         className,
         disabled,
         handleSubmit,
@@ -104,6 +106,13 @@ const EditListingDescriptionFormComponent = props => (
             label={descriptionMessage}
             placeholder={descriptionPlaceholderMessage}
             validate={composeValidators(required(descriptionRequiredMessage))}
+          />
+
+          <CustomCategorySelectFieldMaybe
+            id="category"
+            name="category"
+            categories={categories}
+            intl={intl}
           />
 
           <Button
