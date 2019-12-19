@@ -47,8 +47,9 @@ const SectionHero = props => {
         >
           <FormattedMessage id="SectionHero.browseButton" />
         </NamedLink>
-        <div className={css.heroVideoContainer}></div>
-        <LottieWrapper />
+        <div className={css.heroVideoContainer}>
+          <LottieWrapper />
+        </div>
       </div>
     </div>
   );
