@@ -284,7 +284,6 @@ PaymentMethodsForm.defaultProps = {
   rootClassName: null,
   inProgress: false,
   handleSubmit: null,
-  invalid: false,
   addPaymentMethodError: null,
   deletePaymentMethodError: null,
   createStripeCustomerError: null,
