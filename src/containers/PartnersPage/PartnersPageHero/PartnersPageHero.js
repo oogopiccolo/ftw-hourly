@@ -43,7 +43,7 @@ const SectionHero = props => {
           </h1>
           <ul className={css.heroLinksList}>
             <li>
-              <a className={css.heroButton}>
+              <a href="https://mailchi.mp/a9a8a41c0b41/tor9mkzo0n" className={css.heroButton}>
                 <FormattedMessage id="PartnersPageHero.hospitalityPartner" />
               </a>
             </li>

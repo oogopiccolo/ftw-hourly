@@ -73,6 +73,38 @@
   }
 }
 
+/*Homepage boxes*/
+.homeInfoBoxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 40px;
+  @media (--viewportMedium) {
+    flex-direction: row;
+    margin-top: 50px;
+  }
+  @media (--viewportLarge) {
+  }
+}
+
+.homeInfoBox {
+  background: #fff;
+  padding: 6px 30px 7px;
+  @media (--viewportMedium) {
+    width: 48%;
+  }
+}
+
+.homeInfoBoxOne {
+  margin-bottom: 40px;
+  @media (--viewportMedium) {
+    margin-bottom: 0;
+  }
+}
+
+.homeInfoBoxTwo {
+}
+
 /* A wrapper for a responsive image that holds it's aspect ratio */
 .imageWrapper {
   position: relative;

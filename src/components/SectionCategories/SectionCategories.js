@@ -69,10 +69,51 @@ const SectionCategories = props => {
         {vouchersLink()}
       </div>
       <div className={css.locationRequest}>
-        Don’t see your area?
-        <a className={css.locationRequestLink} href="/" title="Request your area" target="_blank">
+        Don’t see your area?{' '}
+        <a
+          href="https://mailchi.mp/5a03ac4aab1a/nr7802vc1c"
+          className={css.locationRequestLink}
+          href="/"
+          title="Request your area"
+          target="_blank"
+        >
           Request your location is added
         </a>
+      </div>
+      <div className={css.homeInfoBoxes}>
+        <div className={`${css.homeInfoBox} ${css.homeInfoBoxOne}`}>
+          <p>
+            As the Covid-19 situation unfolds around us globally, it often feels like the worst of
+            times - but it is also bringing out the best in many of us.
+          </p>
+          <p>
+            We are working to support those working to help us all. Our medical professionals,
+            pharmacy staff, supply chain workers, delivery drivers, shop workers, scientists,
+            technicians, social workers, IT professionals, social workers, customer care reps ...
+            the list goes on.
+          </p>
+          <p>
+            There are many of us who can help the families of these front-line workers with
+            childcare. If we've got immunity or have tested negative and have been stringently
+            socially distancing, we are well placed to help. If you think you can help a local
+            family to get to work to help us all, get in touch.
+          </p>
+        </div>
+        <div className={`${css.homeInfoBox} ${css.homeInfoBoxTwo}`}>
+          <p>
+            Our team are international, multi-lingual and cross disciplinarian. We have a 24-hour
+            helpline to assist people so that they can make informed decisions with daily access to
+            healthcare professionals for the most up-to-date guidance on a country by country basis.
+          </p>
+          <p>
+            Our team of "Minder Finders" will be Sourcing, Validating and Managing minders across
+            jurisdictions for as many months as is needed.
+          </p>
+          <p>
+            If you think you can volunteer your time to help us find incredible Minders for our
+            front-line workers, get in touch.
+          </p>
+        </div>
       </div>
     </div>
   );
