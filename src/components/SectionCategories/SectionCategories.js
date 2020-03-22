@@ -58,28 +58,6 @@ const SectionCategories = props => {
 
   return (
     <div className={classes}>
-      <div className={css.title}>
-        <FormattedMessage id="SectionCategories.title" />
-      </div>
-      <div className={css.locations}>
-        {categoryLink('Babysitters', babysitterImage, 'pub_category=babysitter')}
-        {categoryLink('Childminders', childminderImage, 'pub_category=childminder')}
-        {categoryLink('Nannies', nannyImage, 'pub_category=nanny')}
-        {categoryLink('Maternity Nurses', maternityNurseImage, 'pub_category=maternity_nurse')}
-        {vouchersLink()}
-      </div>
-      <div className={css.locationRequest}>
-        Don’t see your area?{' '}
-        <a
-          href="https://mailchi.mp/5a03ac4aab1a/nr7802vc1c"
-          className={css.locationRequestLink}
-          href="/"
-          title="Request your area"
-          target="_blank"
-        >
-          Request your location is added
-        </a>
-      </div>
       <div className={css.homeInfoBoxes}>
         <div className={`${css.homeInfoBox} ${css.homeInfoBoxOne}`}>
           <p>
@@ -101,19 +79,44 @@ const SectionCategories = props => {
         </div>
         <div className={`${css.homeInfoBox} ${css.homeInfoBoxTwo}`}>
           <p>
-            Our team are international, multi-lingual and cross disciplinarian. We have a 24-hour
-            helpline to assist people so that they can make informed decisions with daily access to
-            healthcare professionals for the most up-to-date guidance on a country by country basis.
-          </p>
-          <p>
             Our team of "Minder Finders" will be Sourcing, Validating and Managing minders across
             jurisdictions for as many months as is needed.
+          </p>
+          <p>
+            Our team of Minder Finders are all Volunteers. They are multi-lingual and cross
+            disciplinarian.
+          </p>
+          <p>
+            We have a 24-hour helpline to assist people so that they can make informed decisions
+            with daily access to healthcare professionals for the most up-to-date guidance on a
+            country by country basis.
           </p>
           <p>
             If you think you can volunteer your time to help us find incredible Minders for our
             front-line workers, get in touch.
           </p>
         </div>
+      </div>
+      <div className={css.title}>
+        <FormattedMessage id="SectionCategories.title" />
+      </div>
+      <div className={css.locations}>
+        {categoryLink('Babysitters', babysitterImage, 'pub_category=babysitter')}
+        {categoryLink('Childminders', childminderImage, 'pub_category=childminder')}
+        {categoryLink('Nannies', nannyImage, 'pub_category=nanny')}
+        {categoryLink('Maternity Nurses', maternityNurseImage, 'pub_category=maternity_nurse')}
+        {vouchersLink()}
+      </div>
+      <div className={css.locationRequest}>
+        Can't find what you're looking for? We'll find it for you -{' '}
+        <a
+          href="https://mailchi.mp/5a03ac4aab1a/nr7802vc1c"
+          className={css.locationRequestLink}
+          title="Request your area"
+          target="_blank"
+        >
+          Click Here
+        </a>
       </div>
     </div>
   );
