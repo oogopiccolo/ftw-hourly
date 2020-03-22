@@ -93,12 +93,24 @@ const SectionCategories = props => {
           </p>
           <p>
             If you think you can volunteer your time to help us find incredible Minders for our
-            front-line workers, get in touch.
+            front-line workers,{' '}
+            <a href="mailto:kate@oogo.me" title="Email us">
+              get in touch
+            </a>
+            .
           </p>
         </div>
       </div>
       <div className={css.title}>
-        <FormattedMessage id="SectionCategories.title" />
+        Find Childcare - Browse below or{' '}
+        <a
+          href="https://mailchi.mp/67b9201d4828/3silu0p1hb"
+          className={css.locationRequestLink}
+          title="Request childcare"
+          target="_blank"
+        >
+          Send a Request
+        </a>
       </div>
       <div className={css.locations}>
         {categoryLink('Babysitters', babysitterImage, 'pub_category=babysitter')}
@@ -106,17 +118,6 @@ const SectionCategories = props => {
         {categoryLink('Nannies', nannyImage, 'pub_category=nanny')}
         {categoryLink('Maternity Nurses', maternityNurseImage, 'pub_category=maternity_nurse')}
         {vouchersLink()}
-      </div>
-      <div className={css.locationRequest}>
-        Can't find what you're looking for? We'll find it for you -{' '}
-        <a
-          href="https://mailchi.mp/5a03ac4aab1a/nr7802vc1c"
-          className={css.locationRequestLink}
-          title="Request your area"
-          target="_blank"
-        >
-          Click Here
-        </a>
       </div>
     </div>
   );
